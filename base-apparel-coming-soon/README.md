@@ -1,13 +1,12 @@
 # Frontend Mentor - Base Apparel coming soon page solution
 
-This is a solution to the [Base Apparel coming soon page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Base Apparel coming soon page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0).
 
 ## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -30,10 +29,6 @@ Users should be able to:
 ![Desktop view](./design/final-desktop.jpg)
 ![Error view](./design/final-active.jpg)
 ![Mobile view](./design/final-mobile.jpg)
-
-### Links
-
-- Live Site URL: https://base-apparel-coming-soon-ten.vercel.app/
 
 ## My process
 

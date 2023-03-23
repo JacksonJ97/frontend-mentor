@@ -1,13 +1,12 @@
 # Frontend Mentor - Intro component with sign up form solution
 
-This is a solution to the [Intro component with sign up form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Intro component with sign up form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1).
 
 ## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -31,10 +30,6 @@ Users should be able to:
 ![Desktop active view](./design/final-active-desktop.jpg)
 ![Mobile view](./design/final-mobile.jpg)
 ![Mobile active view](./design/final-active-mobile.jpg)
-
-### Links
-
-- Live Site URL: https://intro-component-with-signup-form-tan.vercel.app/
 
 ## My process
 

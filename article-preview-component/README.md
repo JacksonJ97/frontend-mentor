@@ -1,13 +1,12 @@
 # Frontend Mentor - Article preview component solution
 
-This is a solution to the [Article preview component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Article preview component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT).
 
 ## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -29,10 +28,6 @@ Users should be able to:
 ![Desktop active view](./design/final-active-desktop.jpg)
 ![Mobile view](./design/final-mobile.jpg)
 ![Mobile active view](./design/final-active-mobile.jpg)
-
-### Links
-
-- Live Site URL: https://article-preview-component-six-gilt.vercel.app/
 
 ## My process
 
