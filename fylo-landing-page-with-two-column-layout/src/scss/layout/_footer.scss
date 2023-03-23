@@ -1,0 +1,82 @@
+@use "abstracts/variables" as *;
+
+footer {
+  background-color: $veryDarkBlue;
+  color: white;
+  padding: 5em 0 3em 0;
+}
+
+footer img {
+  margin-bottom: 3em;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover,
+footer a:focus {
+  color: $brightBlue;
+  outline: none;
+}
+
+footer li {
+  margin-bottom: 1em;
+}
+
+.contact-links {
+  margin-bottom: 4em;
+}
+
+.contact-links .contact-link-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.contact-links .contact-link-container:first-child a {
+  margin-left: 0.75em;
+}
+
+.contact-links img {
+  margin: 0 1.25em 0 0;
+}
+
+.footer-links {
+  margin-bottom: 4em;
+}
+
+.social-links {
+  text-align: center;
+}
+
+.social-links a {
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid white;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 2em;
+  height: 2em;
+  width: 2em;
+  margin-right: 0.5em;
+}
+
+.social-links a:hover,
+.social-links a:focus {
+  border: 1px solid $brightBlue;
+  outline: none;
+}
+
+@media (min-width: 1100px) {
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .links-container {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+  }
+}

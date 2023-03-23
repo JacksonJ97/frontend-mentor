@@ -1,0 +1,10 @@
+@use "abstracts/variables" as *;
+
+body {
+  font-family: $bodyFont;
+  color: $veryDarkBlue;
+}
+
+p {
+  line-height: 1.5;
+}
