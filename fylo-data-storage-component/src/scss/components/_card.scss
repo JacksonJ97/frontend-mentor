@@ -1,0 +1,18 @@
+@use "abstracts/variables" as *;
+
+.card {
+  background: $darkBlue;
+  padding: 2.5em;
+  border-radius: 8px 75px 8px 8px;
+  box-shadow: 0px 4px 16px 8px rgba($color: #000000, $alpha: 0.2);
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.card button {
+  margin-right: 1.5em;
+}
