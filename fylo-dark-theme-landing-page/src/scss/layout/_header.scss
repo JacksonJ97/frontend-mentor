@@ -1,0 +1,36 @@
+@use "abstracts/variables" as *;
+
+header {
+  margin-top: clamp(32px, 6vw, 64px);
+  margin-bottom: clamp(48px, 6vw, 64px);
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  max-width: 25%;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  display: flex;
+}
+
+nav ul li a {
+  font-family: $header-font;
+  font-size: clamp(12px, 2vw, 16px);
+  margin-left: clamp(14px, 4vw, 56px);
+  border: 1px solid transparent;
+}
+
+nav ul li a:hover {
+  text-shadow: 0px 0 1px $white;
+  border-bottom: 1px solid $white;
+}

@@ -1,0 +1,12 @@
+@use "abstracts/variables" as *;
+
+.testimonial-content {
+  margin-bottom: 10em;
+}
+
+.testimonial-content .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-column-gap: 48px;
+  max-width: 1250px;
+}

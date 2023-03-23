@@ -1,0 +1,26 @@
+@use "abstracts/variables" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+}
+
+button {
+  border-style: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+.sr-only {
+  display: hidden;
+}

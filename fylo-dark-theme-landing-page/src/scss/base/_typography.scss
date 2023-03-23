@@ -1,0 +1,7 @@
+@use "abstracts/variables" as *;
+
+body {
+  font-family: $body-font;
+  font-size: clamp(14px, 2vw, 16px);
+  color: $white;
+}

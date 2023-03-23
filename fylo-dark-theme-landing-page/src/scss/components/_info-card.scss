@@ -1,0 +1,20 @@
+@use "abstracts/variables" as *;
+
+.info-card {
+  text-align: center;
+  margin: 0 auto 6em auto;
+  max-width: 350px;
+}
+
+.info-card img {
+  height: 78px;
+  max-width: 25%;
+  margin: 0 auto 2em auto;
+}
+
+.info-title {
+  font-family: $header-font;
+  font-size: clamp(18px, 2vw, 20px);
+  font-weight: 700;
+  margin-bottom: 0.75em;
+}
