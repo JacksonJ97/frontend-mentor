@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 0.8125rem;
+  font-family: "Manrope", sans-serif;
+  background-color: hsl(210, 46%, 95%);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.article-card {
+  width: 90%;
+  max-width: 355px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+  max-height: 237px;
+  max-width: 400px;
+  overflow: hidden;
+}
+
+.article-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px 12px 0 0;
+}
+
+.article-content {
+  width: 80%;
+  margin: 2em auto;
+}
+
+.article-title {
+  font-size: 1.125rem;
+  color: hsl(217, 19%, 35%);
+  margin-bottom: 1em;
+}
+
+.article-body {
+  color: hsl(212, 23%, 69%);
+  line-height: 1.6;
+}
+
+.article-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1em 0 2em 0;
+  height: 58.5px;
+}
+
+.author-details {
+  display: flex;
+  align-items: center;
+}
+
+.author-picture {
+  width: 15%;
+  border-radius: 50%;
+  margin-right: 1.5em;
+}
+
+.author-name {
+  font-weight: 700;
+  color: hsl(217, 19%, 35%);
+}
+
+.published-date {
+  color: hsl(212, 23%, 69%);
+}
+
+.share-btn {
+  border-radius: 50%;
+  padding: 0.75em;
+  background-color: hsl(210, 46%, 95%);
+  cursor: pointer;
+}
+
+.share-btn:hover {
+  background-color: hsl(212, 23%, 69%);
+}
+
+.desktop-share-container {
+  display: none;
+}
+
+.share-container {
+  display: none;
+  background-color: hsl(217, 19%, 35%);
+  border-radius: 0 0 12px 12px;
+  padding: 1em 0 1.25em 0;
+  height: 58.5px;
+}
+
+.share-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.share-content p {
+  color: hsl(212, 23%, 69%);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.share-links {
+  margin-right: 0.5em;
+  cursor: pointer;
+}
+
+.dark-share-btn {
+  border-radius: 50%;
+  padding: 0.75em;
+  background-color: hsl(214, 17%, 51%);
+  cursor: pointer;
+}
+
+.dark-share-btn:hover {
+  background-color: hsl(212, 23%, 69%);
+}
+
+@media (min-width: 1200px) {
+  .article-card {
+    display: flex;
+    max-width: 800px;
+  }
+
+  .image-container {
+    width: 45%;
+    max-height: 300px;
+  }
+
+  .article-image {
+    border-radius: 12px 0 0 12px;
+  }
+
+  .wrapper {
+    width: 55%;
+    position: relative;
+  }
+
+  .article-content {
+    margin-top: 3em;
+  }
+
+  .article-footer {
+    justify-content: flex-start;
+  }
+
+  .desktop-share-container {
+    position: absolute;
+    top: 50%;
+    right: -10.5%;
+    width: 240px;
+    padding: 1em;
+    background-color: hsl(217, 19%, 35%);
+    box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+  }
+
+  .triangle {
+    position: absolute;
+    right: 40%;
+    width: 40px;
+    height: 25px;
+    background-color: hsl(217, 19%, 35%);
+    clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
+  }
+}
