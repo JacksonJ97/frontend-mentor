@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 0.75rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 2rem;
+}
+
+.active {
+  display: none;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.flip {
+  transform: scaleY(-1);
+}
+
+.hover {
+  color: hsl(14, 88%, 65%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(hsl(273, 75%, 66%) 50%, hsl(240, 73%, 65%));
+  padding-bottom: 2em;
+}
+
+.faq-card {
+  border-radius: 16px;
+  background-color: white;
+  box-shadow: 5px 8px 20px 0px rgba(0, 0, 0, 0.4);
+  width: 90%;
+  max-width: 390px;
+  padding: 10em 2em 2em 2em;
+}
+
+.desktop-illustration-container {
+  display: none;
+}
+
+.mobile-illustration-container {
+  width: 90%;
+  height: 150px;
+  max-width: 390px;
+}
+
+.mobile-illustration {
+  position: relative;
+  height: 150px;
+}
+
+.mobile-image {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  margin-left: -146px;
+}
+
+.mobile-bg {
+  position: absolute;
+  top: 100%;
+  right: 50%;
+  margin-right: -120px;
+}
+
+.accordion-container {
+  margin-top: 2em;
+}
+
+.dropdown-container {
+  padding-bottom: 1.5em;
+  margin-bottom: 1.5em;
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  cursor: pointer;
+}
+
+.question-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question-texts {
+  color: hsl(238, 29%, 16%);
+}
+
+.answer-container {
+  margin-top: 1em;
+  line-height: 1.5;
+  color: hsl(240, 6%, 50%);
+}
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 0.875rem;
+  }
+
+  .desktop-illustration-container {
+    display: block;
+  }
+
+  .mobile-illustration-container {
+    display: none;
+  }
+
+  .desktop-illustration {
+    position: relative;
+    left: -16%;
+  }
+
+  .desktop-image {
+    margin-top: 6em;
+  }
+
+  .desktop-box {
+    position: fixed;
+    margin-left: -489px;
+    margin-top: 225px;
+    z-index: 2;
+  }
+
+  .desktop-bg {
+    position: absolute;
+    left: -105%;
+    top: -65%;
+    z-index: -2;
+  }
+
+  .faq-card {
+    display: flex;
+    max-width: 1000px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 4em;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .accordion-container {
+    margin-top: 6em;
+    width: 50%;
+  }
+
+  h1 {
+    text-align: left;
+  }
+}
