@@ -1,0 +1,176 @@
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --veryDarkBlue: hsl(234, 12%, 34%);
+  --grayishBlue: hsl(229, 6%, 66%);
+  --veryLightGray: hsl(0, 0%, 98%);
+}
+
+body {
+  font-size: 1rem;
+  color: var(--grayishBlue);
+  background-color: var(--veryLightGray);
+}
+
+.unbold {
+  font-weight: 200;
+}
+
+.services-container {
+  width: 85%;
+  margin: 4em auto;
+}
+
+.services-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4em;
+}
+
+.services-heading {
+  font-size: 1.5rem;
+  color: var(--veryDarkBlue);
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.services-subheading {
+  max-width: 585px;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-container {
+  position: relative;
+  background-color: white;
+  border-top: 4px solid;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
+  overflow: hidden; /* To make the card image not overflow out of the card container */
+  max-width: 360px;
+  padding: 1.5em;
+  margin-bottom: 1.75em;
+  transition: all 300ms ease-in-out;
+}
+
+/* Animating hover effect on the cards */
+
+.card-container::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  border-radius: 6px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.3);
+  transition: opacity 300ms ease-in-out;
+}
+
+.card-container:hover {
+  transform: scale(1.1);
+}
+
+.card-container:hover::after {
+  opacity: 1;
+}
+
+.card-heading {
+  font-size: 1.25rem;
+  color: var(--veryDarkBlue);
+  margin-bottom: 0.5em;
+}
+
+.card-body {
+  font-size: 0.875rem;
+  line-height: 1.75em;
+  margin-bottom: 2.5em;
+}
+
+.card-image {
+  float: right;
+}
+
+.card-one {
+  border-top-color: var(--cyan);
+}
+
+.card-two {
+  border-top-color: var(--red);
+}
+
+.card-three {
+  border-top-color: var(--orange);
+}
+
+.card-four {
+  border-top-color: var(--blue);
+}
+
+@media (min-width: 760px) {
+  .cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 1.5em;
+    max-width: 750px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1110px) {
+  .services-heading {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+  }
+
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    column-gap: 1.5em;
+    max-width: 1150px;
+    max-height: 520px;
+    margin: 0 auto;
+  }
+
+  .card-one {
+    grid-column: 1;
+    grid-row: 3/7;
+  }
+
+  .card-two {
+    grid-column: 2;
+    grid-row: 1/5;
+  }
+
+  .card-three {
+    grid-column: 3;
+    grid-row: 3/7;
+  }
+
+  .card-four {
+    grid-column: 2;
+    grid-row: 5/9;
+  }
+}
