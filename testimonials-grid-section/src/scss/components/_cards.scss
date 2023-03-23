@@ -1,0 +1,74 @@
+@use "abstracts/variables" as *;
+
+// Default card style
+.cards {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px -8px rgba($color: #000000, $alpha: 0.2);
+  position: relative;
+  transition: all 300ms ease-in-out;
+}
+
+.cards::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.25);
+  transition: opacity 300ms ease-in-out;
+}
+
+.cards:hover {
+  transform: scale(1.02);
+}
+
+.cards:hover::after {
+  opacity: 1;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 1.125rem;
+  margin-top: 1em;
+}
+
+.card-body {
+  margin-top: 1.5em;
+  opacity: 70%;
+}
+
+// Custom card styles
+.card-1 {
+  color: $lightGrayishBlue;
+  background-image: url(~images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 90% 0%;
+  background-color: $moderateViolet;
+}
+
+.card-2 {
+  background-color: $veryDarkGrayishBlue;
+  color: $lightGrayishBlue;
+}
+
+.card-3 {
+  background-color: $white;
+  color: $veryDarkGrayishBlue;
+}
+
+.card-4 {
+  background-color: $veryDarkBlackishBlue;
+  color: $white;
+}
+
+.card-5 {
+  background-color: $white;
+  color: $veryDarkGrayishBlue;
+}
